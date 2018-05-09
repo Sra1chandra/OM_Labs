@@ -1,0 +1,17 @@
+reset;
+model MoneyDeath!.mod;
+data MoneyDeath!.dat;
+option solver gurobi;
+solve;
+
+for{i in D} {
+  for{j in P} {
+     printf "%d ", x[i,j];
+  }
+  printf "\n";
+}
+
+for{i in D} {
+   printf "%d\n", t[i];
+}
+printf "\n";

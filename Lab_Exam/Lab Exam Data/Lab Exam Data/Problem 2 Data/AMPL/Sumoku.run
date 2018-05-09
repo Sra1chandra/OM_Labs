@@ -1,0 +1,20 @@
+reset;
+model Sumoku.mod;
+data Sumoku.dat;
+option solver gecode;
+option gecode_options "icl=dom var_branching=regret_min_max val_branching=min outlev=1 outfreq=1 timelimit=30";
+
+# option solver ilogcp;
+# option ilogcp_options "optimizer=cp alldiffinferencelevel=4 debugexpr=0 logperiod=1 logverbosity=0";
+
+solve;
+
+printf "x:\n";
+for{i in 1..n} {
+  for{j in 1..n} {
+     printf "%2d ", x[i,j];
+  }
+  printf "\n";
+}
+
+printf "\n";

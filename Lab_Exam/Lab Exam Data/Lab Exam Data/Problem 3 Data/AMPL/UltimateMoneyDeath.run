@@ -1,0 +1,16 @@
+reset;
+model UltimateMoneyDeath.mod;
+data UltimateMoneyDeath.dat;
+option solver gurobi;
+solve;
+
+# display results
+
+display x;
+display t;
+
+
+printf "The money is in room: ";
+for{i in 1..door: x[i,1] > 0} print i; 
+
+display _solve_elapsed_time;

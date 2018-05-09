@@ -1,0 +1,11 @@
+reset;
+model H0.mod;
+data sudoku0.dat;
+option solver gurobi;
+solve;
+for{i in 1..n, j in 1 .. n, k in 1..n} {
+	if x[i, j, k] == 1 then {
+		let y[i, j] := k; 
+	}
+}
+display y;

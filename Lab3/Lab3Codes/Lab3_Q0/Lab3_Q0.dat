@@ -1,0 +1,18 @@
+/*********************************************
+ * OPL 12.6.3.0 Data
+ * Author: krishnam
+ * Creation Date: 11-Mar-2017 at 1:57:02 AM
+ *********************************************/
+
+ items = {"Tomatoes", "Potatoes", "Cucumbers", "Chillies", "Ginger", "Onions"};
+ MaxWeight = 85;
+ value = [40,60,30,40,20,5];
+ weight = [110,150,70,80,30,5];
+
+/*
+ items = { "Apples", "Oranges", "Mangoes", "Bananas", "Guavas", "Pomegranates", "Pineapples", "Watermelons", "Muskmelons", "Chickoos"}; 
+ MaxWeight = 152;
+ 
+ value = [92,57,49,68,60,43,67,84,87,72];
+ weight = [23,31,29,44,53,38,63,85,89,82];
+ */

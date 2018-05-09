@@ -1,0 +1,6 @@
+reset;
+model Symmetry.mod;
+data Symmetry.dat;
+option solver gurobi;
+solve;
+display x;

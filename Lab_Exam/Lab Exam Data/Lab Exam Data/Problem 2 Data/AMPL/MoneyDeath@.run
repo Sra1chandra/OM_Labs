@@ -1,0 +1,18 @@
+reset;
+model MoneyDeath@.mod;
+data MoneyDeath@.dat;
+option solver gurobi;
+solve;
+
+print "x:";
+for{i in 1..door} {
+        for{j in 1..prize} {
+           printf "%d ", x[i,j];
+        }
+        printf "\n";
+}
+
+print "t:";
+for {i in 1..door}
+        printf "%d\n", t[i];
+printf "\n";

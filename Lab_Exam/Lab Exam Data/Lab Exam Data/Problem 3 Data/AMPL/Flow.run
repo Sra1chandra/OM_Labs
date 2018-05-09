@@ -1,0 +1,6 @@
+reset;
+model Flow.mod;
+data Flow.dat;
+option solver gecode;
+solve;
+display x;

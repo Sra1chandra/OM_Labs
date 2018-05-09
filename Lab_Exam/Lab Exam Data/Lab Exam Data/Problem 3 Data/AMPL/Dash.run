@@ -1,0 +1,6 @@
+reset;
+model Dash.mod;
+data Dash.dat;
+option solver gecode;
+solve;
+display x;

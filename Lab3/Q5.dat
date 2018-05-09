@@ -1,0 +1,4 @@
+ items = {"Tomatoes", "Potatoes", "Cucumbers", "Chillies", "Ginger", "Onions"};
+ MaxWeight = 85;
+ value = [40,60,30,40,20,5];
+ weight = [110,150,70,80,30,5];

@@ -1,0 +1,12 @@
+reset;
+model H0.mod;
+data H0.dat;
+option solver gurobi;
+solve;
+param y{i in 1..9,j in 1..9};
+for{i in 1..9, j in 1 .. 9, k in 1..9} {
+	if x[i, j, k] == 1 then {
+		let y[i, j] := k; 
+	}
+}
+display y;

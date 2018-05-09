@@ -1,0 +1,39 @@
+reset;
+model Plutonians.mod;
+data Plutonians.dat;
+option solver gurobi;
+
+solve;
+
+display x;
+display y;
+display d;
+  
+
+printf "x:\n";
+for{i in T} {
+    for{j in T} {
+        printf "%d ", x[i,j];
+    }
+    printf "\n";
+}
+
+
+printf "\ny:\n";
+for{l in S} {
+    for{k in E} {
+        printf "%d ", y[l,k];
+    }
+    printf "\n";
+}
+
+
+printf "\nd (statements):\n";
+for{i in S} {
+   printf "%d %d ", i, d[i]; 
+   if d[i] = 3 then {
+     printf "<--";
+   }
+   printf "\n";
+}
+printf "\n";

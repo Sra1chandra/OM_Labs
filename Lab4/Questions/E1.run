@@ -1,0 +1,9 @@
+reset;
+model E1.mod;
+option solver baron;
+solve;
+display V;
+display S;
+display M;
+display K;
+display B;

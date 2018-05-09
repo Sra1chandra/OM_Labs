@@ -1,0 +1,11 @@
+Valves = [1, 2, 3];
+Blenders = [1, 2];
+
+demand = [100, 200];
+
+carbonfinal = [2.5, 1.5];
+
+outputPrice = [10, 16];
+
+inputcost = [7, 17, 11];
+inputcarbon = [3,1,2];

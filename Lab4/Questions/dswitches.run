@@ -1,0 +1,7 @@
+reset;
+model dswitches.mod;
+data dswitches.dat;
+option solver baron;
+solve;
+display OBJ;
+display x;

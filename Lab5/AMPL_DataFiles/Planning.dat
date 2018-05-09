@@ -1,0 +1,6 @@
+set PRODUCTS := MassGainer WheyProtein ChocolateMassGainer ;
+param days := 22;
+param : demand sellingprice productioncost quota initialcost minimumquantity :=
+MassGainer 5400 124 73.40 550 180000 21
+WheyProtein 4600 109 53.90 470 160000 21
+ChocolateMassGainer 5300 114 66.40 550 110000 17 ;

@@ -1,0 +1,6 @@
+reset;
+model Eragon.mod;
+data Eragon.dat;
+option solver gurobi;
+solve;
+display x;

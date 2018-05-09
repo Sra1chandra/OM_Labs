@@ -1,0 +1,6 @@
+reset;
+model E3.mod;
+data E3.dat;
+option solver baron;
+solve;
+display cnt;

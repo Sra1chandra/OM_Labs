@@ -1,0 +1,7 @@
+reset;
+model inheritance.mod;
+data inheritance.dat;
+option solver baron;
+solve;
+display value;
+display x;

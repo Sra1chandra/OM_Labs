@@ -1,0 +1,4 @@
+param planet  := 3;   # 1 = Earth, 2 = Jupiter, 3 = Neptune
+param place := 3;   # 1st, 2nd or 3rd 
+param type  := 3;   # 1 = truth-teller, 2 = alternator, 3 = liar
+param state := 3; 

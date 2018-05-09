@@ -1,0 +1,6 @@
+reset;
+model Snake.mod;
+data Snake.dat;
+solve;
+option solver gurobi;
+display x;

@@ -1,0 +1,6 @@
+reset;
+model test2.mod;
+data test2.dat;
+option solver "gecode";
+solve;
+display v;

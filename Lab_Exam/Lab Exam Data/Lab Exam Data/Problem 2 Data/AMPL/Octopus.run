@@ -1,0 +1,6 @@
+reset;
+model Octopus.mod;
+data Octopus.dat;
+option solver gurobi;
+solve;
+display x;

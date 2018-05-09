@@ -1,0 +1,24 @@
+reset;
+model H3.mod;
+data H3.dat;
+
+option solver gecode;
+option gecode_options "var_branching=degree_max val_branching=rnd outlev=1 outfreq=1 timelimit=30";
+# option solver ilogcp;
+
+solve;
+
+#display weights;
+printf "    ";
+for{i in 1..n} {
+  printf "%2d ", weights[i];
+}
+printf "\n";
+for{j in 1..m} {
+  printf "%2d: ", j;
+  for{i in 1..n} {
+     printf "%2d ", x[j,i];
+  }
+  printf "\n";
+}
+printf "\n";

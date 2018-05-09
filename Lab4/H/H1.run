@@ -1,0 +1,13 @@
+reset;
+model H1.mod;
+data H1.dat;
+option solver gurobi;
+solve;
+# display one solution
+printf "Solution :\n";
+for { i in {1..n} } {
+	for { j in {1..n} } {
+		printf "%d ", x[i,j];
+	}
+	printf "\n";
+}

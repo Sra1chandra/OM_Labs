@@ -1,0 +1,9 @@
+param n := 5;
+param: rowElements: rowElementsValues:= 
+1 3 3
+2 5 8
+3 4 19
+4 2 13
+5 4 1;
+
+for {(i,j) in rowElements} {	let P[i,j] := rowElementsValues[i,j]; }

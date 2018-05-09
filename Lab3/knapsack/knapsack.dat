@@ -1,0 +1,10 @@
+/*********************************************
+ * OPL 12.6.3.0 Data
+ * Author: jss
+ * Creation Date: 05-Mar-2018 at 4:42:36 PM
+ *********************************************/
+
+// items = {"Tomatoes", "Potatoes", "Cucumbers", "Chillies", "Ginger", "Onions"};
+ MaxWeight = 85;
+ value = [40,60,30,40,20,5];
+ weight = [110,150,70,80,30,5];

@@ -1,0 +1,9 @@
+reset;
+model Inheritance.mod;
+data Inheritance.dat;
+option solver "../gecode";
+solve;
+display x;
+display y;
+display sum{i in 1..n} v[i]*x[i];
+display sum {j in 1..n} v[j]*y[j];

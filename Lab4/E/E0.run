@@ -1,0 +1,6 @@
+reset;
+model E0.mod;
+data E0.dat;
+option solver baron;
+solve;
+display x;

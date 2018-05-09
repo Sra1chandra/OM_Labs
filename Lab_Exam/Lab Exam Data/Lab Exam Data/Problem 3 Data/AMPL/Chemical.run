@@ -1,0 +1,7 @@
+reset;
+model Chemical.mod;
+data Chemical.dat;
+option solver minos;
+solve;
+display x;
+display y;

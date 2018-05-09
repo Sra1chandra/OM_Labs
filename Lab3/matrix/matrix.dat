@@ -1,0 +1,19 @@
+/*********************************************
+ * OPL 12.6.3.0 Data
+ * Author: jss
+ * Creation Date: 05-Mar-2018 at 5:23:02 PM
+ *********************************************/
+
+ n = 4;
+ rowsSum = [10, 26, 42, 58];
+ colsSum = [28, 32, 36, 40];
+ diagsSum = [34, 34]; //Principal Diagonal sum first
+ 
+ matrixi = #[
+ 1: #[1:1]#,
+ 2: #[4:8]#,
+ 3: #[2:14]#,
+ 4: #[3:15]#
+ ]#;
+ // This is a way of giving only few entries of a matrix.
+ // i: #[j:k]# means ith row, jth column has entry k. Rest will be set to default 0.

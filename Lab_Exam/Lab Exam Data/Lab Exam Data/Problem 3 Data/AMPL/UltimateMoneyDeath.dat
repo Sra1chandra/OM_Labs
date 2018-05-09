@@ -1,0 +1,2 @@
+param door  := 9;
+param prize := 3; # 1 = Money, 2 = Leopard, 3 = Empty

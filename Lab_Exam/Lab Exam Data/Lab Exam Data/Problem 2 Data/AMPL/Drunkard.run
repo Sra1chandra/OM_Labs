@@ -1,0 +1,6 @@
+reset;
+model Drunkard.mod;
+data Drunkard.dat;
+solve;
+display x;
+display y;

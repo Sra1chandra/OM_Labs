@@ -1,0 +1,25 @@
+reset;
+model H4.mod;
+data H4.dat;
+
+option solver gecode;
+
+
+solve;
+
+display x;
+
+printf "x = [";
+for{i in 1..m} printf "%d ", x[i];
+printf "]\n";
+
+for{i in 1..m:x[i] = 1} printf "%d ", i;
+printf "\n";
+
+for{j in 1..n} {
+    for{i in 1..m: x[i] = 1} {
+        # printf "%d %d %d\n", i,j, c[i,j];
+        printf "%d ", c[i,j];
+    }
+    printf "\n";
+}

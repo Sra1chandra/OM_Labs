@@ -1,0 +1,6 @@
+reset;
+model Paths.mod;
+data Paths.dat;
+option solver gurobi;
+solve;
+display x;

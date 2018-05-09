@@ -1,0 +1,16 @@
+/*********************************************
+ * OPL 12.6.3.0 Data
+ * Author: krishnam
+ * Creation Date: 25-Mar-2018 at 2:36:19 PM
+ *********************************************/
+ 
+ PRODUCTS = {"MassGainer", "WheyProtein", "ChocolateMassGainer"};
+
+days = 22;
+
+demand = [5400 4600 5300];
+sellingprice = [124 109 114];
+productioncost = [73.4, 53.9, 66.4];
+quota = [550, 470, 550];
+initialcost = [180000 160000 110000];
+minimumquantity = [21 21 17];

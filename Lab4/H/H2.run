@@ -1,0 +1,25 @@
+reset;
+model H2.mod;
+data H2.dat;
+option solver gecode;
+
+solve;
+
+# display Colors;
+# display y;
+# display x;
+
+for{ i in countries} {
+   printf "%s : %d\n", i, x[i];
+}
+
+printf "\n";
+
+for{ (i,j) in graph} {
+   printf "%s (%d) %s (%d) ", i, x[i], j, x[j];
+   if x[i] = x[j] then {
+     printf " SAME!!!";
+   } 
+   printf "\n";
+
+}

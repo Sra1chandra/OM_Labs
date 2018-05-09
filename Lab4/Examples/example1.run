@@ -1,0 +1,7 @@
+reset;
+model example1.mod;
+data example1.dat;
+option solver minos;
+solve;
+display profit;
+display paint;

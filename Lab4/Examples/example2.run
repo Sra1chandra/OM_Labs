@@ -1,0 +1,19 @@
+reset;
+model example2.mod;
+data example22.dat;
+option solver gecode;
+option gecode_options "var_branching=size_min val_branching=min outlev=1 outfreq=1 timelimit=60";
+
+solve;
+
+for {i in 1..n} {
+   for {j in 1..n} {
+       if x[i,j] = 1 then {
+          printf "#";
+       } else {
+          printf " ";
+       }
+   }
+   printf "\n";
+};
+printf "\n";

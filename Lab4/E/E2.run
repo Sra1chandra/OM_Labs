@@ -1,0 +1,5 @@
+reset;
+model E2.mod;
+option solver gecode;
+solve;
+display musk;

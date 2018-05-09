@@ -1,0 +1,9 @@
+reset;
+model Chemical.mod;
+data Chemical.dat;
+option solver loqo;
+solve;
+display x;
+display y;
+display z;
+display c;
